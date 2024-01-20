@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main #left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #D25146;
+    overflow: hidden;
+    animation-name: rightToLeft;
+    animation-duration: 1s;
+    /* animation-delay: 4s; */
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+
+#left #nav{
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    animation-name: rightToLeft;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    /* background-color: red; */
+    
+}
+
+#nav h2{
+    color: #F7F5ED;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#left img{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    animation-name: rightToLeft;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+#left h1{
+    text-align: right;
+    position: absolute;
+    z-index: 999;
+    right: 3%;
+    bottom: 3%;
+    color: #F7F5ED;
+    font-size: 70px;
+    animation-name: bottomToTop;
+    animation-duration: 3s;
+    /* animation-delay: .3s; */
+    animation-iteration-count: 1; 
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+
+#main #right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #F7F5ED;
+}
+
+#box{
+    width: 100%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+#right #img1 {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    animation-name: rightToLeft;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    /* background-color: aqua; */
+}
+
+#right #img2{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 190px;
+    object-fit: cover;
+    animation-name: rightToLeft;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    /* background-color: burlywood; */
+    
+}
+
+#right #img3{
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 175px;
+    object-fit: cover;
+    animation-name: rightToLeft;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    /* background-color: burlywood; */
+}
+
+#right h1{
+    position: absolute;
+    right: -18%;
+    top: 30%;
+    rotate: -90deg;
+    font-size: 60px;
+    animation-name: rightToLeft;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+#right button{
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    padding: 45px 30px;
+    border-radius: 50%;
+    background: transparent;
+    animation-name: rightToLeft;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+ @keyframes bottomToTop {
+    0% {
+        bottom: -50%;
+    }
+
+    100% {
+        bottom: 3%;
+    }
+}
+
+@keyframes rightToLeft {
+    0%{
+        display: none;
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+} 
+
+
+
+
